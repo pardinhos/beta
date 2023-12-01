@@ -1,0 +1,248 @@
+ @import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto:wght@300&family=Rubik&family=Secular+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ 
+    --primaria: #000000;
+    --secundaria: #004AAD;
+    --terciaria: #D9D9D9;
+    --quarta: #EA15C2;
+    --quinta: #E5E900; 
+    --sexta: #FFFFFF;
+}
+
+
+/* difinição de fonte e exclusão de qualquer coisa que for ser ultrapassado*/
+main { 
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 14vh;
+}
+
+/* a apresentação do site, primeiro container visivel: definição de tamanho e dislplay para os box neles*/
+.principal{
+    background: url(../imagens/Home.png);
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* padronização das boxs */
+.conteudo { 
+    display: flex;
+    gap: 50px;
+}
+
+/* POR ENQUANTO: tamanho da logo*/ 
+.conteudo.lg { 
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 320px;
+    height: 100px;
+    padding: 20px;
+    background: url(../imagens/logo.png); 
+    background-size: cover;
+
+}
+
+/* Texto de apresentação, coloração branca e afastamento da borda */
+.conteudo.texto{ 
+    color: white;
+    width: 400px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+/* Botão embaixo do texto*/
+/*Definição de estilização do botão, distância do texto, mudança de cursor, tamanho e cor*/
+.btn{ 
+    text-transform: uppercase;
+    margin: 30px 0;
+    width: 180px;
+    padding: 10px;
+    font-size: larger;
+    cursor: pointer;
+    border: 2px solid var(--quinta);
+    background: black;
+    transition: 0.3s;
+}
+
+/*Mudar a cor do texto dentro do botão*/
+.btn a{ 
+    color: white;
+    text-decoration: none;
+}
+
+/* fazer o botão responder ao cursor*/
+.btn:hover{ 
+    background: #e5e90034;
+}
+
+/*Box para colocar o icone*/
+.complemento{ 
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+/* Centralização do texto na box e aumento de tamanho*/
+.complemento p{
+    align-self: center;
+    font-size: 20px;
+}
+
+/* Criação do traço depois do "SIGA-NOS" e antes do Icone*/ 
+.traco{ 
+    width: 150px;
+    border-bottom: 2px solid white;
+}
+
+/*Criação do icone clicável e direcionável e mudança da cor */
+.icone{
+    color: #E5E900;
+    text-decoration: none;
+}
+
+/* aumentar o tamanho do icone*/
+.icone i{ 
+    font-size: xx-large;
+}
+
+
+
+/* Baners que mudam de imagem*/
+/* Definir tamanho, deixar redondo, localização no container, duração da animação e o shadow*/
+.conteudo.banners { 
+    background: url(../imagens/galera-na-entrada.jfif) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    right: 200px;
+    animation: move 20s infinite; 
+    box-shadow: 0px 0px 30px rgb(78, 77, 77);
+}
+
+/* Criação da animação que fica trocando a imagem que está nos banners */
+@keyframes move {
+    0% { 
+        background-image: url(../imagens/galera-na-entrada.jfif) center;
+        background-size: cover;  
+    }
+    25% {
+        background-image: url(../imagens/galera-na-sala.jfif);
+        background-size: cover;
+
+    }
+    50% {
+        background-image: url(../imagens/galera-no-sermais.jfif);
+        background-size: cover;
+
+    }
+    75% {
+        background-image: url(../imagens/galera-na-sala.jfif);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(../imagens/galera-na-entrada.jfif) center;
+        background-size: cover;
+    }
+}
+
+/* Difinação da imagem dentro da box */
+.conteudo.banners .gallery-iten .gallery-imagem { 
+    width: 100%;
+    height: 400px;
+    object-fit: cover ;
+}
+
+/* padronização de container*/
+.container.principal { 
+    background-color: #dcdcdc;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* container dentro do container que abriga a justificativa*/ 
+/* colocado no meio, direcionamento e tamanho*/
+.justificativa{
+    margin: 200px auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 1000px;
+    border-radius: 20px;
+}
+
+/* imagem dentro do container*/
+/* tamanho e arredondamento de borda*/
+.img1{
+    height: 400px;
+    width: 350px;
+    background: red;
+}
+
+/* distanciar cada texto */
+.texto{ 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 600px;
+    
+}
+
+/* aumentar o tamanho do titulo */ 
+.texto>h1{
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+.texto > p{ 
+    margin-top: 40px;
+}
+
+/* Terceira parte*/
+/* Definição de conteiner, tamanho, altura e separação do grid*/
+.terciario{ 
+    min-height: 1100px;
+    border: 3px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*definição de box dentro do terceiro conteiner */ 
+.box{
+    border: 1px solid black;
+    color: white;
+}
+
+/* deixar o conteiner em xadrez*/
+.box:nth-of-type(3n+1){
+    background: black;
+} 
+
+/*teste para ajuste da imagem*/
+.box img{ 
+    border-radius: 50%;
+    width: 50%;
+    height: 60%;
+}

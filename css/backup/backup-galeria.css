@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* DEFININDO DEMARCAÇÃO */
+main { 
+    border: 2px solid red;
+    margin-top: 14vh;
+}
+
+/* QUADRANTE DA GALERIA*/
+/* Deixar a box centralizada e definir um tamanho para o container */
+.galeria{ 
+    border: 2px solid green;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* DEMARCAÇÃO DAS FOTOS*/
+/* separar as box pelo grid e informar seu tamanho e altura */ 
+.fotos{ 
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    height: 350px;
+    width: 1200px;
+}
+
+/* TITULO DO CONTAINER*/
+/* Definir uma posição do titulo no container */
+.titulo{ 
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+/* IMAGEM VISIVEL DE CADA BOX*/
+/* demarcação e cor de cada div*/
+.imagem{ 
+    background: green;
+    position: relative;
+    border: goldenrod 2px solid;
+    transition: 0.5s;
+}
+
+/* NOME DAS FOTOS*/
+/* posição do titulo dentro da div */
+.imagem h3{
+    position: absolute;
+    bottom: 10px;
+    border: 2px solid black;
+}
+
+/* INFORMAÇÃO DAS FOTOS */
+/* poisição do texto dentro da div, alinhamento, espaço e retirada da visualização */
+.imagem p{ 
+    text-align: center;
+    width: 150px;
+    margin: 30px auto;
+    display: none;
+}
+
+/* fazer a imagem crescer e se sobressair em cima das outras ao passar o mouse em cima  */
+.imagem:hover{ 
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+/* fazer o texto aparecer junto com a imagem crescendo */
+.imagem:hover p{ 
+    display: block;
+}
+
+/* fazer as outras divs ficarem em desfalque quando não for a selecionada*/
+.fotos:hover .imagem:not(:hover){
+    opacity: 0.5;
+}

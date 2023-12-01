@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+*{ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{ 
+   --primaria: #000000;
+   --secundaria: #004AAD;
+   --terciaria: #D9D9D9;
+   --quarta: #EA15C2;
+   --quinta: #E5E900; 
+   --sexta: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+    main{ 
+        margin: 0;
+    }
+    .conteudo.lg{ 
+        width: 430px;
+        height: 135px;
+        top: 150px;
+        left: 100px;
+    }
+    .conteudo.texto{ 
+        width: 450px;
+        margin-left: 100px;
+    }
+    .complemento{ 
+        left: 100px;
+        bottom: 160px;
+    }
+    .conteudo.banners{ 
+        right: 20px;
+    }
+    .icon-complementar{
+        right: 280px;
+        bottom: 180px;
+    }
+
+    .justificativa{ 
+        gap: 0px;
+    }
+    .img1{
+        height: 250,5px;
+        width: 375px;
+        border-radius: 10%;
+    }
+    .legenda{ 
+        font-size: small;
+    }
+    .texto{ 
+        width: 350px;
+    }
+    .texto>h2{ 
+        font-size: 5.5em;
+    }
+    .avusso1{ 
+        top: 500px;
+    }
+    .avusso2{
+        right: -30px;
+        top: 0;
+    }
+
+    .box2::before{
+        top: -200px;
+        left: -550px;
+    }
+
+    .texto{
+        gap: 50px;
+    }
+
+    .box::before{ 
+        bottom: -200px;
+        left: -100px;
+    }
+
+    .box::after{
+        top: -340px;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 770px) { 
+    .conteudo.lg{ 
+        width: 200px;
+        height: 63px;
+        top: 120px;
+        left: 50px;
+    }
+    .conteudo.texto{ 
+        width: 250px;
+        margin-left: 50px;
+        font-size: 15px;
+    }
+    .complemento{ 
+        left: 50px;
+        bottom: 80px;
+    }
+    .conteudo.banners{ 
+        right: 10px;
+    }
+    .icon-complementar{
+        right: 260px;
+        bottom: 80px;
+    }
+
+    .justificativa{ 
+        gap: 0px;
+    }
+    .img1{
+        height: 250,5px;
+        width: 375px;
+        border-radius: 10%;
+    }
+    .legenda{ 
+        font-size: small;
+    }
+    .texto{ 
+        width: 280px;
+    }
+    .texto>h2{ 
+        font-size: 4em;
+    }
+    .avusso1{ 
+        top: 500px;
+    }
+    .avusso2{
+        right: -50px;
+        top: 0;
+    }
+
+    .box2::before{
+        top: -300px;
+        left: -500px;
+    }
+
+    .texto{
+        gap: 20px;
+    }
+
+    .box::before{ 
+        bottom: -200px;
+        left: -100px;
+    }
+
+    .box::after{
+        top: -340px;
+        left: 350px;
+    }
+    .flip, .flip2{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 430px) { 
+    .principa{
+        display: block;
+    }
+    .conteudo.lg{ 
+        width: 124px;
+        height: 20px;
+        top: 90px;
+        left: 140px;
+    }
+    .conteudo.texto{ 
+        width: 350px;
+        margin-left: 50px;
+        margin-top: -150px;
+    }
+    .complemento{ 
+        left: 180px;
+        bottom: 230px;
+    }
+    .traco{ 
+        width: 100px;
+    }
+    .conteudo.banners{ 
+        height: 200px;
+        background-size: contain;
+        right:-100px;
+        border-radius: 0;
+        right: 10px;
+        bottom: 10px;
+    }
+    .icon-complementar{
+        right: 285px;
+        bottom: 115px;
+        rotate: 100deg;
+    }
+
+    .justificativa{ 
+        flex-direction: column-reverse;
+    }
+
+    .legenda{ 
+        display: none;
+    }
+    .texto{ 
+        width: 400px;
+        gap: 0;
+        margin-top: 30px;
+    }
+    .texto > p{ 
+        margin: 0;
+    }
+
+
+    .btn{
+        margin: 5px 0;
+        width: 150px;
+        padding: 5px;
+        font-size: medium;
+    }
+
+    .box2::before{
+        top: -400px;
+        left: 50px;
+    }
+
+    .tudo{ 
+        flex-direction: column ;
+        justify-content: flex-start;
+    }
+
+   .quarto{ 
+        flex-direction: column;
+    }
+
+    .texto{
+        gap: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 390px){
+    .conteudo.lg{ 
+        left: 120px;
+    }
+    .conteudo.texto{ 
+        width: 300px;
+        margin: auto;
+        margin-top: 150px;
+    }
+    .complemento{ 
+        left: 150px;
+        bottom: 240px;
+    }
+    .complemento p{
+        font-size: 15px;
+    }
+    .icone > i{
+        font-size: 30px;
+    }
+    .traco{ 
+        width: 50px;
+    }
+    .conteudo.banners{ 
+        width: 352px;
+        bottom: 20px;
+    }
+    .icon-complementar{
+        right: 250px;
+    }
+
+    .img1{
+        height: 167px;
+        width: 250px;
+    }
+    .texto{ 
+        width: 300px;
+    }
+    .texto>h2{ 
+        font-size: 3em;
+    }
+
+    .texto > p{ 
+        margin: 0;
+    }
+
+    .flip, .flip2{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .conteudo.banners{ 
+        width: 300px;
+        background-size: contain;
+        border-radius: 0;
+        right: 10px;
+        bottom: 20px;
+    }
+    .icon-complementar{
+        right: 200px;
+        bottom: 115px;
+        rotate: 100deg;
+    }
+}
